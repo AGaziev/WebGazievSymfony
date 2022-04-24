@@ -24,9 +24,9 @@ class Quote
     private $year;
 
     public function __construct($quote, $historian, $year) {
-        $this->$quote = $quote;
-        $this->$historian = $historian;
-        $this->$year = $year;
+        $this->quote = $quote;
+        $this->historian = $historian;
+        $this->year = $year;
     }
 
     public function getId(): ?int
