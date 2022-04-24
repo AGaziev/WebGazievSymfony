@@ -55,6 +55,12 @@ class Admin implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @see UserInterface
      */
+
+    public function __toString(): string
+    {
+        return $this->getUserIdentifier();
+    }
+
     public function getRoles(): array
     {
         $roles = $this->roles;
